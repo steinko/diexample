@@ -2,12 +2,14 @@ package com.steinko.spring.core.diexample.controller;
 
 import com.steinko.spring.core.diexample.service.GreetingService;
 
+import org.springframework.stereotype.Controller;
+
+@Controller
 public class SetterInjectController {
 	
 	GreetingService service;
 
 	public String sayGreeting() {
-		// TODO Auto-generated method stub
 		return service.sayGreeting();
 	}
 
