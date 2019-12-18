@@ -2,12 +2,14 @@ package com.steinko.spring.core.diexample.controller;
 
 import com.steinko.spring.core.diexample.service.GreetingServiceImpl;
 import org.springframework.stereotype.Controller;
+import org.springframework.beans.factory.annotation.Autowired;
 
 
 @Controller
 public class PropertyInjectController {
 	
-	private GreetingServiceImpl service = new GreetingServiceImpl();
+	@Autowired
+	private GreetingServiceImpl service ;
 
 	public String sayGreeting() {
 		
