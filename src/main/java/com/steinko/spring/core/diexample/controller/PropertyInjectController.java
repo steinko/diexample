@@ -4,7 +4,7 @@ import com.steinko.spring.core.diexample.service.GreetingServiceImpl;
 
 public class PropertyInjectController {
 	
-	GreetingServiceImpl service = new GreetingServiceImpl();
+	private GreetingServiceImpl service = new GreetingServiceImpl();
 
 	public String sayGreeting() {
 		
